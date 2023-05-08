@@ -31,5 +31,10 @@ public class BoardRepository {
                 .getResultList();
     }
 
+    public Long count(){
+        return em.createQuery("select count(b) from Board b",Long.class)
+                .getSingleResult();
+    }
+
 
 }

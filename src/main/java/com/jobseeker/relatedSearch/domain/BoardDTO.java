@@ -2,6 +2,7 @@ package com.jobseeker.relatedSearch.domain;
 
 import lombok.Getter;
 
+
 @Getter
 public class BoardDTO {
     private String title;
@@ -11,4 +12,6 @@ public class BoardDTO {
         this.title = title;
         this.content = content;
     }
+
+    protected BoardDTO() {}
 }
